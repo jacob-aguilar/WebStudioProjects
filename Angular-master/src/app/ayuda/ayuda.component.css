@@ -1,0 +1,155 @@
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+p {
+  font-family: fantasy;
+  font: 150% sans-serif;
+  text-align: center;
+  color: black;
+}
+
+  .paciente{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;     
+  }
+  .paciente1{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente1.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;      
+  }
+  .paciente2{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente2.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;      
+  }
+  .paciente3{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente3.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;      
+  }
+  .paciente4{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente4.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;      
+  }
+  .paciente5{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente5.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;     
+  }
+  .paciente6{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\paciente6.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;    
+  }
+  .at1{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\at1.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;     
+  }
+  .medicamento{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\medicamento.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-size: 100% 100%;     
+  }
+  .consolidado{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\consolidado.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;     
+  }
+  .usuario{  
+    height: 475px;
+    width:100%;     
+    background: url('src\imagenes\usuario.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat:no-repeat;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;     
+  }
+
+  .padre{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width:100%; 
+  }
+
+
+.carousel-control-next-icon:after
+{
+  /* content: '>'; */
+  font-size: 55px;
+  color: transparent;
+}
+
+.carousel-control-prev-icon:after {
+  /* content: '<'; */
+  font-size: 55px;
+  color:transparent;
+}

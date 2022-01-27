@@ -1,0 +1,83 @@
+<mat-card style="margin: 15px;" [class.mat-elevation-z5]="true"> 
+                        
+                     
+  
+  
+                          <mat-form-field class="search">
+                            <input matInput (keyup)="applyFilter($event.target.value)" ><mat-label><mat-icon>search</mat-icon> &nbsp;   <b>Buscar Paciente</b> </mat-label>
+                          </mat-form-field>
+                          
+                          <table mat-table [dataSource]="dataSource1" class="mat-elevation-z">
+
+                           
+
+                            <ng-container matColumnDef="nombre_completo">
+                              <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                              <td mat-cell *matCellDef="let element"> {{element.nombre_completo}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="numero_cuenta">
+                              <th mat-header-cell *matHeaderCellDef> Número de Cuenta </th>
+                              <td mat-cell *matCellDef="let element"> {{element.numero_cuenta}} </td>
+                            </ng-container>
+
+                            <!-- Position Column -->
+                            <ng-container matColumnDef="carrera">
+                              <th mat-header-cell *matHeaderCellDef> Carrera </th>
+                              <td mat-cell *matCellDef="let element"> {{element.carrera}} </td>
+                            </ng-container>
+                          
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="sexo">
+                              <th mat-header-cell *matHeaderCellDef> Sexo </th>
+                              <td mat-cell *matCellDef="let element"> {{element.sexo}} </td>
+                            </ng-container>
+                          
+                            <!-- Weight Column -->
+                            <ng-container matColumnDef="categoria">
+                              <th mat-header-cell *matHeaderCellDef> Categoria </th>
+                              <td mat-cell *matCellDef="let element"> {{element.categoria}} </td>
+                            </ng-container>
+                      
+
+                            <ng-container matColumnDef="remitidoa">
+                              <th mat-header-cell *matHeaderCellDef> Remitido </th>
+                              <td mat-cell *matCellDef="let element"> {{element.seccion}} </td>
+                            </ng-container>
+
+                            <!-- <ng-container matColumnDef="diagnostico1">
+                                <th mat-header-cell *matHeaderCellDef> Diagnostico 1 </th>
+                                <td mat-cell *matCellDef="let element"> <input type="text" matInput></td>
+                              </ng-container>
+                            
+                              <ng-container matColumnDef="sn1">
+                                  <th mat-header-cell *matHeaderCellDef> S/N </th>
+                                  <td mat-cell *matCellDef="let element"> <input type="text" matInput></td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="diagnostico2">
+                                    <th mat-header-cell *matHeaderCellDef> Diagnostico 2 </th>
+                                    <td mat-cell *matCellDef="let element"> <input type="text" matInput></td>
+                                  </ng-container>
+                            
+                                  <ng-container matColumnDef="sn2">
+                                      <th mat-header-cell *matHeaderCellDef> S/N </th>
+                                      <td mat-cell *matCellDef="let element"> <input type="text" matInput></td>
+                                    </ng-container> -->
+                         
+                          
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                          </table>
+                          
+                      
+</mat-card>
+
+    
+
+
+
+
+
+
+
