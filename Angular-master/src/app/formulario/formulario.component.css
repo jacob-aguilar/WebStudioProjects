@@ -1,0 +1,123 @@
+mat-tab-group {
+  margin: 25px;
+}
+
+mat-horizontal-stepper{
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected{
+  background: #1928d4;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done{
+  background: #f1db10;
+
+}
+
+#spin{
+  position: absolute;
+   top: 50%;
+   left: 50%;  
+}
+.uploader-status ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #f1db10;
+  
+}
+
+.containerScroll{
+  /* height: 450px; */
+  height: 80%;
+  min-width: 99%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: auto;
+  position: absolute;
+  overflow-x: hidden;   
+  top:30;
+  left:0;  
+}
+
+
+.botonesstep{
+  position: fixed;
+     bottom: 10px;
+     right: 40px;
+
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+  color: black;
+}
+
+
+
+h2{
+  margin-bottom: 20px;
+}
+
+mat-divider {
+  margin-bottom: 16px;
+}
+
+.medium-width{
+  width: 50%;
+}
+
+/*radio buttons */
+.example-radio-group {
+  display: flex;
+  flex-direction: row;
+ margin-top: 20px;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+/* label */
+#example-radio-group-label{
+  margin-top: 20px;
+}
+
+.sexual{  width: 210px;}
+.acordion{
+  width: 370px;
+}
+
+
+table {
+  width: 100%;
+}
+
+tr.mat-footer-row {
+  font-weight: bold;
+}
+
+
+label{
+  display: block;
+  color: black;
+}
+input{
+  color: black ;
+}
+
+mat-radio-button{
+  color: black;
+}
+.mat-input-element {
+  color:black;
+}

@@ -1,0 +1,62 @@
+
+      <mat-tab-group dynamicHeight animationDuration="200ms" mat-align-tabs="center" color="accent"
+                backgroundColor="primary"
+      style="width: 100%; height: 100%;background: #4f5387;">
+        
+   <!--Rango edades-->
+        <mat-tab label="Rango edades">
+        
+        <div class="row" style="margin-top: 10px;">
+          <div class="col" style="text-align: center;">
+            <label  >Menor de 19 Años:  {{edad[0].menos19}}</label>
+          </div>
+          <div class="col" style="text-align: center;">
+            <label  >Entre 20-24 años:  {{edad[0].primerRango}}</label>
+          </div>
+          <div class="col"  style="text-align: center;">
+            <label  >Entre 25-29 años:  {{edad[0].segundoRango}}</label>
+          </div> 
+          <div class="col"  style="text-align: center;">
+            <label  >Mayor de 30 años:  {{edad[0].tercerRango}}</label>
+          </div> 
+          <div class="col"  style="text-align: center;">
+            <label  >Total: {{edad[0].cuartoRango}}</label>
+          </div>          
+        </div>
+
+        <div class="hijo" > 
+          <ngx-charts-bar-vertical style="fill: white;"  [scheme]="colorSchemeedad" [results]="singleedad" [gradient]="gradientedad"
+          [xAxis]="showXAxisedad" [yAxis]="showYAxisedad" [legend]="showLegendedad" [showXAxisLabel]="showXAxisLabeledad"
+          [showYAxisLabel]="showYAxisLabeledad" [xAxisLabel]="xAxisLabeledad" [yAxisLabel]="yAxisLabeledad"
+          legendTitle="Rangos de edad">       
+        </ngx-charts-bar-vertical>
+        </div>
+      
+        
+        </mat-tab>   
+        <!--Sexo-->
+        <mat-tab label="Sexo" >   
+            
+          <div class="row" style="margin-top: 10px;margin-bottom: 50px;">
+            <div class="col" style="text-align: center;">
+              <label  >Hombre:  {{elemetos[0].masculino}}</label>
+            </div>
+            <div class="col" style="text-align: center;">
+              <label  >Mujeres:  {{elemetos[0].femenino}}</label>
+            </div>
+            <div class="col"  style="text-align: center;">
+              <label  >Total:  {{elemetos[0].masculino + elemetos[0].femenino}}</label>
+            </div>          
+          </div>
+     
+            
+  <div class="hijo" >      
+          <ngx-charts-bar-vertical style="fill: white;min-height: 90%;"  [scheme]="colorSchemesexo" [results]="singlesexo" [gradient]="gradientsexo"
+          [xAxis]="showXAxissexo" [yAxis]="showYAxissexo" [legend]="showLegendsexo" [showXAxisLabel]="showXAxisLabelsexo"
+          [showYAxisLabel]="showYAxisLabelsexo" [xAxisLabel]="xAxisLabelsexo" [yAxisLabel]="yAxisLabelsexo"
+          legendTitle="Sexos">       
+        </ngx-charts-bar-vertical>
+        </div>
+       
+        </mat-tab>
+       </mat-tab-group>
